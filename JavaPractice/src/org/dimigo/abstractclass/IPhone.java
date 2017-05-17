@@ -8,28 +8,29 @@ package org.dimigo.abstractclass;
  * org.dimigo.inheritance
  *   |_ IPhone
  * 
- * 1. 개요 : 
- * 2. 작성일 : 2015. 8. 16.
- * </pre>
+ * 1. 개요: 
+ * 2. 작성일: 2017. 5. 15.
+ * </pre> 
  *
- * @author		: teacher
- * @version		: 1.0
+ * @author : user
+ * @version : 1.0
  */
 public class IPhone extends SmartPhone {
 	
-	public IPhone() {
-		super();
-	}
-
-	public IPhone(String model, String company, int price) {
+	public IPhone() { }
+	public IPhone(String model, String company, int price)
+	{
 		super(model, company, price);
 	}
-
-	public void pay() {
-		System.out.println("애플 페이로 결제합니다.");
+	
+	@Override 
+	public void pay()
+	{
+		System.out.println("애플 페이로 결재합니다.");
 	}
 	
-	public void useAirDrop() {
+	public void useAirDrop()
+	{
 		System.out.println("AirDrop 기능을 사용합니다.");
 	}
 }
